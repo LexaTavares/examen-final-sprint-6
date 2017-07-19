@@ -1,9 +1,45 @@
 $rojo-bullet: #f64552;
 $gris-bullet: #f8f8f8;
-$Amarillo-botones: #fbd43b;
+$amarillo-botones: #fbd43b;
 $Gris-dark: #212121;
 $Gris-letra-soft : #8f8f8f;
 $Turquesa-terminos: #00c3a3;
 $Morado-entradaNumeros: #49233b;
 $Morado-light : #451e36;
 $Morado-dark : #38052a;
+$letra-form: 25px;
+
+div{
+  width: 100%;
+}
+div>img{
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.boton{
+  background-color: $amarillo-botones;
+  padding: 20px;
+  margin-top: 15%;
+  font-size: 25px;
+}
+
+.boton--registro{
+  @extend .boton;
+  width: 80%;
+}
+
+.boton--continuar{
+  @extend .boton;
+  width: 50%
+}
+
+.texto-gris-claro{
+  color:$Gris-letra-soft;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.letra-form{
+  font-size: $letra-form;
+}
