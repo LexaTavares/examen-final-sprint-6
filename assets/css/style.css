@@ -7,19 +7,23 @@ div > img {
 
 .boton, .boton--registro, .boton--continuar {
   background-color: #fbd43b;
-  padding: 20px;
-  margin-top: 15%;
-  font-size: 25px; }
+  padding: 15px;
+  margin-top: 10%;
+  font-size: 10px;
+  color: white;
+  font-size: 15px; }
 
 .boton--registro {
-  width: 80%; }
+  width: 60%; }
+  .boton--registro a {
+    color: white; }
 
 .boton--continuar {
   width: 50%; }
 
 .texto-gris-claro {
   color: #8f8f8f;
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 80px; }
 
 .letra-form {
