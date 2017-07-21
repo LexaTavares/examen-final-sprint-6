@@ -1,44 +1,39 @@
 function cargarPagina() {
   $('.carousel.carousel-slider').carousel();
   $('.box').change(validarContenido);
-  $('#agregar').click(moverIngresaCod);
-  datosRecibidos();
+  $('#agregar').click(solicitarApi);
 };
 
 function validarContenido() {
   var botonAdd = $("#agregar");
   if ($(".numeroTel").val().length == 10 && $(".box").prop("checked")) {
     botonAdd.removeAttr("disabled");
-    window.location
+    return true;
   } else {
     botonAdd.attr("disabled", true);
   }
 };
-
-function moverIngresaCod() {
-  $(location).attr('href', 'http://localhost:3000/views/ingresaCod.html')
-
-}
 
 
 var api = {
   url: "http://localhost:3000/api/registerNumber"
 }
 
-function datosRecibidos() {
+var solicitarApi = function() {
   $.post(api.url, {
-      "phone": 7412589630,
+      "phone": $('#telephone').val(),
       "terms": true,
-      "code": "code"
     },
     function(datoRecibido) {
-      console.log(datoRecibido);
-      alert(datoRecibido.data.code);
-      // if ($('#code').val().length == 6) {
-      //   $(location).attr('href', 'http://localhost:3000/views/usuarioYape.html')
-      // };
-    });
+      var codigo = localStorage.setItem("code", datoRecibido.data.code);
+      var phone = localStorage.setItem("phone", datoRecibido.data.phone);
 
+      if (datoRecibido.message == "Usuario válido") {
+        $(location).attr('href', 'http://localhost:3000/views/ingresaCod.html');
+      } else {
+        alert(datoRecibido.message);
+      }
+    });
 }
 
 

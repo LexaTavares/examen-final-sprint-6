@@ -22,7 +22,7 @@ div>img{
   @extend .boton;
   width: 60%;
   a{
-    color: white;
+    color: white
   }
 }
 
@@ -31,10 +31,14 @@ div>img{
   width: 50%
 }
 
-.texto-gris-claro{
+.texto-gris{
   color:$Gris-letra-soft;
+}
+
+.texto-gris-claro{
+  @extend .texto-gris;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .letra-form{

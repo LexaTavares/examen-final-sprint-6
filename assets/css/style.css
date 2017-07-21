@@ -21,10 +21,12 @@ div > img {
 .boton--continuar {
   width: 50%; }
 
+.texto-gris, .texto-gris-claro {
+  color: #8f8f8f; }
+
 .texto-gris-claro {
-  color: #8f8f8f;
   margin-top: 20px;
-  margin-bottom: 80px; }
+  margin-bottom: 60px; }
 
 .letra-form {
   font-size: 25px; }

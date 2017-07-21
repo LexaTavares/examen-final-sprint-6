@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>validación</title>
+  <title>usuario Yape</title>
   <link rel="stylesheet" type="text/css" href="/info/materialize-css/dist/css/materialize.min.css">
   <link href="../info/css/style.css" rel="stylesheet" />
 </head>
@@ -17,14 +17,8 @@
         </div>
       </section>
       <section class="col s10 offset-s1">
-        <h1 class="center-align">Para comenzar validemos tu número</h1>
-        <h5 class="center-align texto-gris-claro">Recibirás un SMS con un código de validación</h5>
-      </section>
-      <section class="col s12 input-field">
-        <div class="input-field col s12">
-          <input id="telephone" type="tel" class="numeroTel">
-          <label for="telephone"><img src="../img/icons/phoneandnumber.png" alt="Phone Number" class="responsive-image"></label>
-        </div>
+        <h1 class="center-align">Crea tu usuario Yape</h1>
+        <h5 class="center-align texto-gris-claro">Ingresa tu nombre, email y clave de usuario</h5>
       </section>
     </section>
   </section>
@@ -32,16 +26,25 @@
     <section class="row">
       <form action="#" class="col s12 offset-4">
         <p>
-          <input type="checkbox" id="test5" class="box" />
-          <label for="test5">Acepto los <a href="#">Términos y condiciones.</a></label>
+          <img src="../img/icons/user.png" alt="user" style="height:30px">
+          <input type="text" name="name" placeholder="Nombre" class="center-align">
+        </p>
+        <p>
+          <img src="../img/icons/message-gray.png" alt="message" style="height:30px">
+          <input type="email" name="mail" placeholder="correo@ejemplo.com" class="center-align">
+        </p>
+        <p>
+          <img src="../img/icons/lock.png" alt="lock" style="height:30px">
+          <input type="password" name="pass" placeholder="Ingresa clave de 6 dígitos" class="center-align">
         </p>
       </form>
+      <h5 class="center-align texto-gris">Cuida esta clave como oro, es tu acceso a Yape.</h5>
     </section>
   </section>
   <section class="container">
     <section class="row">
       <section class="center-align">
-        <button type="button" name="button" class="boton--continuar" disabled id="agregarDatos"><a href="usuarioYape.html">CREAR CUENTA</a></button>
+        <button type="button" name="button" class="boton--continuar" disabled id="cuenta"><a href="usuarioYape.html">CREAR CUENTA</a></button>
       </section>
 
     </section>
